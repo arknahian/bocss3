@@ -1,0 +1,235 @@
+:root{
+    --companyName : Kontainer Boligstyling;
+    font-family: 'Cabin', sans-serif;
+    --color: #cdbdaa;
+    background-color: rgba(250, 235, 215, 0.507);
+}
+body{
+    margin:0;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #020202;
+    position: fixed;
+    width: 100%;
+}
+a.item{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+}
+a.main-anchor::after{
+    content: "";
+    border: 0px solid #CCBCA9;
+    border-radius: 11px;
+    display: block;
+    width: 0%; 
+    transition-property: border, width ;
+    transition-delay: 100ms;
+    transition-duration: 400ms;
+}
+a.main-anchor:hover::after{
+    content: "";
+    border: 2px solid #CCBCA9;
+    border-radius: 11px;
+    display: block;
+    width: 100%; 
+}
+a.main-anchor:visited::after{
+    content: "";
+    border: 2px solid #CCBCA9;
+    border-radius: 11px;
+    display: block;
+    width: 100%; 
+    color: #020202;
+}
+
+#logo img{
+    width: 94px;
+    height: 100px;
+    border-radius: 9px;
+}
+#logo{
+    flex: 1;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 183px;
+    text-align: center;
+    margin-top: 244px;
+    margin-right: 73px;
+    border-radius: 9px;
+    box-shadow: 0 0 5px black;
+    
+}
+.dropdown-container{
+    transition-property: display, flex-direction;
+    transition-duration: 800ms;
+    transition-delay: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.dropdown-content a{
+    padding: 10px;
+    text-decoration: none;
+    color: #CCBCA9;
+}
+nav> .dropdown-container:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-container {
+    padding: 0px;
+    margin-left: 7px;
+    display: contents;
+}
+.dropdown-content > .dropdown-item:hover{
+    background-color: #CCBCA9;
+    color: white;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("media/UZ4VHKEdhTkviRzJSEfFZC.jpg");
+    height: 900px;
+    object-fit: cover;
+    /* margin-top: -24px; */
+    background-position: fixed;
+}
+
+.welcome-text {
+    display: inline-block;
+    width: 100%;
+    margin-top: 400px;
+
+}
+
+h2#slogan{
+    text-align: center;
+    color: var(--color);
+    animation: slogan 4s ease 1;
+    text-shadow: 5px 5px 3px black;
+}
+@keyframes slogan{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.animation {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    letter-spacing: 1px;
+    color: var(--color);
+    text-shadow: 5px 5px 3px black;
+  }
+  .animation span {
+    display: inline-block;
+    animation: slideLeft 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+
+
+
+
+  section.design{
+      padding-top:1px;
+  }
+  
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 400px;
+    background-color: #d3cdc5bb;
+    margin: 20px;
+    height: 554px;;
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.card-header{
+    background-image: url('Media/posters-in-cozy-apartment-interior-royalty-free-image-943910360-1534189931.jpg');
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border-radius: 4px;
+    background-size: cover;
+    height: 205px;
+    
+
+}
+.card-header img{
+    height: 100%;
+    display: flow-root;
+}
+.card-text{
+    background-color: wheat;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 2px;
+}
+.aside{
+    grid-row-start: 2;
+    grid-column-start: 5;
+    background-color: rgb(216, 184, 126);
+}
+.card-footer{
+    background-color: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.aside-nav a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+.aside-nav a:hover {
+    background-color: var(--color);
+}
+.card-footer{
+    text-align: right;
+}
+.card-footer a{
+    color: rgb(149, 139, 139);
+}
+
+
+
+ 
+ 
+
+  
+  
+   
