@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+   <style>
+    html, body {
+       margin: 0;
+       padding: 0;
+       height: 100%;
+    }
+    #table {
+       display: table;
+       width: 100%;
+       height: 100%;
+       border-spacing: 10px;
+       border-collapse: separate;
+   	   table-layout:fixed;
+    }
+    .row {
+       border: 1px solid red;
+       display: table-row;
+    }
+    .cell {
+       border: 1px solid green;
+       display: table-cell;
+    }
+
+
+
+    .row_group {
+       display: table-row-group;
+    }
+    #row2_cell2, #row3_cell2 {
+       background-color: red;
+    }
+    
+    
+   </style>
+</head>
+<body>
+    <div id='table'>
+       <div class='row'>
+          <div class='cell'>
+          </div>
+          <div class='cell'>
+          </div>
+       </div>
+
+       
+       <div class='row_group'>
+          <div id='row_2' class='row'>
+             <div class='cell'>
+             </div>
+             <div id='row2_cell2' class='cell'>
+             </div>
+          </div>
+          <div id='row_footer' class='row'>
+             <div class='cell'>
+             </div>
+             
+          </div>
+       </div>
+    </div>
+    </body>
+</html>

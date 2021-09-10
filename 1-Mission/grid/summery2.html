@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+      /* .item1{
+        grid-area: header;
+      }
+      .item2{
+        grid-area: menu;
+      }
+      .item3{
+        grid-area: right;
+      }
+      .item4{
+        grid-area: main;
+      }
+      .item5{
+        grid-area: footer;
+      } */
+      
+      section{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background-color: aliceblue;
+        grid-gap: 10px;
+        text-align: center;
+      }
+      section > .item {
+        background-color: rgb(255, 255, 255);
+        /* padding: 100px;         */
+      }
+      .item1{
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      .item2{
+        grid-row-start: 2;
+        grid-row-end: 6;
+      }
+      .item3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-end: 6;
+        grid-row-start: 2;
+      }
+      .heading-img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+      }
+      .item4{
+        grid-row-start: 2;
+        grid-row-end: 6;
+        grid-column-start:5 ;
+      }
+      .item5{
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+  </style>
+</head>
+<body>
+  <section>
+   <div class="item1 item">
+     <img class="heading-img" src="https://imgcomfort.com/Userfiles/Upload/images/illustration-geiranger.jpg" alt="">
+   </div>
+   <div class="item2 item">
+     <h1>Heading -2</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi harum nulla aliquid est recusandae totam animi perspiciatis blanditiis, nesciunt rem! Delectus quos soluta cumque debitis dolorum laudantium, dicta eaque vero mollitia molestias, odit fuga dolores perspiciatis error saepe temporibus provident sed, iure ex qui repellat totam natus ullam! Nesciunt enim cum magni maiores saepe maxime laborum, doloribus quae? Maiores illum culpa corporis, repellat pariatur consectetur deserunt. Assumenda ea voluptates cum sint maiores reprehenderit nemo doloremque explicabo dolorum magni repudiandae excepturi, commodi cumque eos nulla incidunt quaerat consequuntur sapiente magnam adipisci iure maxime quae? Quidem minus consequuntur sapiente earum laudantium voluptates ab temporibus qui excepturi, rerum veniam porro cum quibusdam eum impedit sed iste expedita cupiditate. Voluptate repellat molestiae modi accusamus itaque, voluptas sequi aliquam animi nobis, laborum unde! Maxime aut non dolores alias possimus, fuga ipsa odit deserunt excepturi minus corrupti, nesciunt repellat doloribus neque. Nostrum quia aut autem voluptates laboriosam eum debitis consequatur officia corrupti dolore, fuga officiis error, non quae voluptas, culpa ducimus aliquam sint minima nulla magnam atque. Saepe neque cum assumenda illo enim culpa maiores? Esse dolorum quisquam doloremque perspiciatis expedita delectus assumenda nesciunt itaque nihil nostrum, necessitatibus distinctio iure modi amet nemo quibusdam consequatur pariatur. Dolor consequuntur possimus cumque in blanditiis praesentium! Neque magnam iure optio saepe magni, placeat tempora quidem nostrum, ipsa amet sint, illum debitis facilis? Maxime quas atque eos, molestias voluptatibus, modi suscipit minima ratione libero harum expedita a? Recusandae quia id molestiae? Odio tempore nam adipisci facere? Provident veniam consequatur laudantium, adipisci iusto sed odit labore autem earum distinctio assumenda libero quis delectus reprehenderit dignissimos ut inventore vitae eos sit deserunt obcaecati, aperiam perspiciatis, accusamus velit. Veniam veritatis perferendis qui laudantium doloribus facilis possimus aliquid distinctio dignissimos corporis quaerat a ut modi deserunt, dolore obcaecati deleniti! Nesciunt quam praesentium fugiat ut neque adipisci quis ipsum laboriosam et facilis, quae unde, corporis quos magnam architecto eius cupiditate modi sit quidem earum odit hic, eligendi assumenda debitis. Explicabo illum nulla modi assumenda ipsum libero sunt exercitationem officia sit aspernatur tempore laudantium adipisci eveniet, excepturi ipsa, iusto quidem ab. Facilis, laborum accusantium aliquid, tempora dicta voluptates vitae magni exercitationem velit saepe id molestiae placeat est expedita, dolorem ipsam maxime fugit modi impedit voluptas. Eaque soluta autem, labore adipisci vitae exercitationem. Cumque hic animi tempore distinctio repellat placeat dolore recusandae ut quo! Nulla ipsum, ab expedita vel rem incidunt esse obcaecati maxime debitis facere deserunt ipsa provident tenetur adipisci repellat minus commodi reprehenderit, perspiciatis eveniet repellendus. Doloribus minus asperiores quasi commodi officia quam vero minima veritatis? Ex quisquam numquam praesentium adipisci tempora repellat in explicabo reiciendis, quas reprehenderit sequi amet placeat doloremque laboriosam magnam aliquid consequuntur commodi modi enim expedita odio ipsam! Consectetur sapiente alias itaque voluptatem molestiae possimus quis hic, reiciendis cumque autem quas ex laudantium numquam voluptates tempora qui odit! Ipsam quibusdam cumque, est soluta maxime doloribus facilis repellat, qui iste fugit tempora fuga quam ullam libero voluptas eius molestias quo. Quidem adipisci deleniti, rerum ipsum numquam dicta praesentium asperiores? Expedita, maxime natus!</p>
+   </div>
+   <div class="item3 item">
+     <h1>Heading -3</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci dicta quo nam culpa mollitia harum, obcaecati beatae. Neque aspernatur autem natus quaerat odio at accusantium, dolores expedita quibusdam sequi?</p>
+   </div>
+   <div class="item4 item">
+     <h1>Heading -4</h1>
+   </div>
+   <div class="item5 item">
+     <h1>Heading -5</h1>
+   </div>
+  </section>
+</body>
+</html>

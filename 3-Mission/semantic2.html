@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        rt{
+            font-size: 15px;
+        }
+        data:hover::after{
+            content: '(ID' attr(value)')';
+        }
+        mark{
+            display: none;
+        }
+        .ruby:hover mark{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </nav>
+    <header>
+        THis is header
+    </header>
+    <main>
+        <hr>
+        <section class="ruby" title="Ruby">
+            <ruby>
+                আল নাহিয়ান অর্ক<rp>(</rp><rt><mark>Al Nahian Ark</mark></rt><rp>)</rp>
+            </ruby>
+        </section>
+        <hr>
+        <section class="formatting" title="formatting">
+            <p>This is some text. This is <u>underline</u>.</p>
+            <p>This is <abbr title="This is abbr">abbr</abbr></p>
+            <pre>
+                this is pre
+                    look at this how is that
+                <s>This is s</s> 
+            </pre>
+            <samp>This is samp</samp>
+            <kbd>This is kbd</kbd>
+            <em>What is em This</em>
+            <code>
+                This is code
+            </code>
+            <var>This is var</var>
+            <p>this is <ins>right</ins></p>
+            <p>This is <del>right</del></p>
+
+            <p>Lorem ipsum dolor sit <bdo dir="nothing">THis is bdp</bdo> amet consectetur adipisicing elit. Deserunt molestias quia in architecto dolore ipsam adipisci inventore facere libero expedita?
+            <bdi>THis is bdi</bdi>
+            <cite>this us</cite>
+            </p>
+        </section>
+
+        <section class="quote" title="quote">
+            <blockquote>
+                This is blockquote
+            </blockquote>
+            <dl>
+                <dt>This is dt</dt>
+                <dl>This is dl</dl>
+            </dl>
+        </section>
+        <hr>
+        <section class="plugin">
+            <data value="432">This is a data</data>
+        </section>
+        <hr>
+    </main>
+    <aside>
+        This is aside
+    </aside>
+    <footer>
+        THis is footer
+    </footer>
+</body>
+</html>

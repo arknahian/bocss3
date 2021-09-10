@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        nav{
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        nav a:hover{
+            background-color: rgb(85, 84, 84);
+        }
+        .drop-down > .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: grey;
+            min-width: 168px;
+            margin-left: 278px;
+            margin-top: 48px;
+        }
+        .drop-down > .dropdown-content > a.dropdown-item {
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .drop-down:hover > .dropdown-content{
+            display: flex; 
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+        <div class="drop-down">
+            <a class="dropdown-btn" href="">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="" class="dropdown-item">Item-1</a><a href="" class="dropdown-item">Item-2</a><a href="" class="dropdown-item">Item-3</a><a href="" class="dropdown-item">Item-4</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
