@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F1FF;
+}
+:root{
+    --h1color : #562EFF;
+}
+body h1{
+    color: #562EFF;
+    font-size: 2em;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #562EFF;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+.top-logo{
+    flex: 0.5;
+    padding: 20px;
+}
+.top-logo img{
+    width: 60px;
+}
+
+
+
+section.top-player{
+    background-color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    margin-left: 21%;
+    margin-top: 65px;
+    border-radius: 10px;
+
+}
+
+section{
+    padding: 20px;
+}
+.player-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.player-id{
+    width: 342px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.player-id > .player-img > img{
+    width: 70px;
+    
+}
+.player-img {
+    flex: 0.4;
+}
+.top-player::after{
+    content: "";
+    border: 1px solid grey;
+    position: absolute;
+    width:55%;
+}
+.topBlog-card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topBlog-card{
+    display:flex;
+    flex-direction: row;
+    width: 528px;
+    padding-bottom: 44px;
+}
+.topBlog-card-thumb img{
+    width: 300px;
+}
+.topBlog-card-title{
+    line-height: 30px;
+}
+.author{
+    color: var(--h1color);
+}
+.topBlog-card-title h3{
+    color: grey;
+}
+.topBlog-card-title {
+    padding-left: 22px;
+}
+
+
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 2px 2px 5px lightgrey;
+    border-radius: 15px;
+    height: 320px;
+    margin: 35px;
+    flex-wrap: wrap;
+}
+.course-thumb img{
+    width: 300px;
+}
+.course-title p{
+    color: tomato;
+    font-weight: bold;
+}
+.course-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.course-title {
+    padding-bottom: 12px;
+}
+
+.rating-pont {
+    color: gold;
+}
+.rating-pont span {
+    color: grey;
+}
+
+.course-duration {
+    color: tomato;
+    background-color: rgba(255, 0, 0, 0.157);
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: -5px;
+    padding: 6px;
+}
+
+.course-card-container{
+    display: flex;
+}
